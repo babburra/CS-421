@@ -1,0 +1,13 @@
+name:                mp0-setup
+version:             0.1.0.0
+synopsis:            Ensure you can run Stack
+license:             NCSA
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable main
+    hs-source-dirs:     app
+    main-is:            Main.hs
+    ghc-options:        -threaded -rtsopts -with-rtsopts=-N
+    build-depends:      base , unordered-containers >= 0.2 , parsec
+    default-language:   Haskell2010
